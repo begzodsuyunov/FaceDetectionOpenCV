@@ -123,7 +123,8 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
             // Ensure faceDetector is initialized
             if (faceDetector != null) {
                 MatOfRect faceDetections = new MatOfRect();
-                faceDetector.detectMultiScale(mGray, faceDetections, 1.1, 4, 0, new Size(100, 100), new Size());
+                faceDetector.detectMultiScale(mGray, faceDetections, 1.5, 4, 0, new Size(100, 100), new Size());
+//                faceDetector.detectMultiScale(mGray, faceDetections, 1.9, 4, 0, new Size(100, 100), new Size());
                 /**
                  * What is scale factor?
                  * The scale factor is crucial for performance.
